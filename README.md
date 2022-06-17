@@ -1,4 +1,9 @@
-# LoginFormSavchenkoAlexandra
+# LoginForm_bySavchenkoAlexandra
+Starter page:
+![angular-login-form-layout](https://user-images.githubusercontent.com/47991015/174275764-e55cae4f-2d29-406f-877d-56f0a91b3d05.PNG)
+
+Form with validation (with using Material Angular):
+![image](https://user-images.githubusercontent.com/47991015/174276100-25e9fb70-0550-43e8-a7e8-b5e9484ff07e.png)
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.0.2.
 
