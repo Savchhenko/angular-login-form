@@ -1,0 +1,31 @@
+<main class="main-container">
+    <h1>Регистрация</h1>
+    
+    <form class="form" (ngSubmit)="onLogin()" name="loginForm" [formGroup]="loginForm">
+        <mat-form-field class="form-full-width" appearance="fill">
+            <mat-label>Введите Email</mat-label>
+            <input matInput formControlName="email" required>
+            <mat-error>
+                <div *ngIf="loginForm.get('email')?.hasError('required')">Необходимо ввести почтовый адрес</div>
+                <div *ngIf="loginForm.get('email')?.hasError('pattern')">Введите корректный почтовый адрес</div>
+            </mat-error>
+        </mat-form-field>
+        
+        <mat-form-field class="form-full-width" appearance="fill">
+            <mat-label>Введите пароль</mat-label>
+            <input matInput formControlName="pass" type="pass" required>
+            <mat-error>
+                <div *ngIf="loginForm.get('email')?.hasError('pattern')">Пароль должен содержать не меньше 6 символов, строчные и заглавные буквы, а также цифры</div>
+                <div *ngIf="loginForm.get('pass')?.hasError('required')">Необходимо создать пароль</div>
+            </mat-error>
+        </mat-form-field>
+        
+        <mat-form-field class="form-full-width" appearance="fill">
+            <mat-label>Повторите пароль</mat-label>
+            <input matInput required>
+        </mat-form-field>
+        
+        <button mat-raised-button class="form-btn">Зарегистрироваться</button>
+    </form>
+</main>
+
